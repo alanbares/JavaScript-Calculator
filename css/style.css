@@ -3,5 +3,20 @@
 *Organized from top to bottom
 * Name of section / Search term
 
-1.
+1. Body of Calculator / #Calculator
 ------------------------------------------------------------------**/
+
+/* #Calculator
+================================ */
+
+.calculator{
+  background-color: #59c3d8;
+  width: 270px;
+  height: 400px;
+  margin: 200px auto;
+  border: 2px solid;
+  border-radius: 30px;
+}
+
+
+
