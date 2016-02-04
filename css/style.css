@@ -32,13 +32,18 @@
 }
 
 .buttons {
-    padding: 8px;
+    padding: 10px;
 }
 
 .btn {
 	height: 30px;
 	width: 40px;
-	margin: 8px;
-	margin-bottom: 4px;
+	margin: 10px;
+	margin-bottom: 1px;
+}
+
+.row5 {
+    padding-right: 75px;
+    margin-top: -25px;
 }
 
