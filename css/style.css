@@ -50,7 +50,7 @@
 	margin-bottom: 1px;
 }
 
-#plus {
+.plus {
     height: 80px;
     float: right;
     margin-right: 23px;
@@ -64,6 +64,7 @@
 .row4{
     padding-left: 15px;
 }
+
 .row5 {
     margin-top: -60px;
     padding-left: 15px;
