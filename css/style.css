@@ -4,6 +4,8 @@
 * Name of section / Search term
 
 1. Body of Calculator / #Calculator
+2. Calculator Display / #Display
+3. Calculator Buttons / #Buttons
 ------------------------------------------------------------------**/
 
 /* #Calculator
@@ -18,6 +20,9 @@
   border-radius: 30px;
 }
 
+
+/* #Display
+================================ */
 .display{
     width: 200px;
 	height: 50px;
@@ -31,6 +36,9 @@
     font-size: 30px;
 }
 
+/* #Buttons
+================================ */
+
 .buttons {
     padding: 10px;
 }
@@ -42,8 +50,21 @@
 	margin-bottom: 1px;
 }
 
-.row5 {
-    padding-right: 75px;
-    margin-top: -25px;
+#plus {
+    height: 80px;
+    float: right;
+    margin-right: 23px;
+    margin-top: 10px;
 }
 
+.row {
+    margin-top: -5px;
+}
+
+.row4{
+    padding-left: 15px;
+}
+.row5 {
+    margin-top: -60px;
+    padding-left: 15px;
+}
