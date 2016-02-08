@@ -29,6 +29,8 @@
 	margin: 20px auto;
 	padding: 5px;
 	background: #dcedc1;
+	border: 2px inset #2ac11c;
+	border-radius: 10px;
 }
 
 .display-text {
