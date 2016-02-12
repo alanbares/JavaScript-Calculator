@@ -1,27 +1,31 @@
 /*global $ */
 
 $(document).ready(function() {
-	var calcValues = [],
-		displayBox = $('.display-text'),
-		numKeys = [0,1,2,3,4,5,6,7,8,9],
-		operationKeys = ['+', '-', '/', '*', '%'],
-		controlKeys = ['AC', 'CE'];
+	var input = [],
+		expression = [];
 
 	$('button').click(function(e) {
-		var k = $(this).data('calcVal');
-		console.log(calcValues);
+		var k = $(this).data('calcVal'),
+			result;
 
-		// On click switch case for buttons not displayed
-		if ($.inArray(k, controlKeys) >=0) {
-			calcValues = [];
-		} else if ($.inArray(k, numKeys)) {
-			calcValues.push(k);
+		if (/[0-9]/.test(k)) {
+			input.push(k);
+			console.log(input);
+		} else if(k == '=') {
+			expression.push(input);
+
+			result = eval(expression.join(''));
+			console.log(result);
 		}
-		updateDisplay();
+		 else  {
+			expression.push(input.join(''));
+			input = [];
+			expression.push(k);
+			console.log(expression);
+		}
+
+
 	});
 
-	function updateDisplay() {
-		displayBox.text(calcValues.join(''));
-	}
 
 });
