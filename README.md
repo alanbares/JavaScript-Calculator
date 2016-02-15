@@ -1,3 +1,3 @@
 # JavaScript-Calculator
 
-Work in progress calculator. Currently button clicks are registered in the console and dislplayed on screen. 
+Work in progress calculator. No visible functionality, working on logic for calculations. 
