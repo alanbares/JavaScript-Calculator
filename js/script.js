@@ -2,7 +2,11 @@
 
 $(document).ready(function() {
 	var input = [],
-		expression = [];
+		expression = [],
+        displayBox = $('.display-text'),
+ 		numKeys = [0,1,2,3,4,5,6,7,8,9],
+ 		operationKeys = ['+', '-', '/', '*', '%', '='],
+ 		controlKeys = ['AC', 'CE'];
 
 	$('button').click(function(e) {
 		var k = $(this).data('calcVal'),
@@ -14,19 +18,23 @@ $(document).ready(function() {
 			console.log(input);
 
 		//Check if input is = and then compute result
-		} else if(k == '=') {
+		}
+        else if(k == 'operationKeys') {
 			expression.push(input);
 
 			result = eval(expression.join(''));
 			console.log(result);
 		}
-		// Joins input array into a strin and pushes it to expression array
+		// Joins input array into a string and pushes it to expression array
 		 else  {
 			expression.push(input.join(''));
-			input = [];
 			expression.push(k);
+            input = [];
+
 			console.log(expression);
 		}
+
+
 
 
 	});
